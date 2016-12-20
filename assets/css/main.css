@@ -1,0 +1,360 @@
+/* INÍCIO CABEÇALHO */
+
+html, body{
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	width: 100%;
+	font-family: monaco,Consolas,Lucida Console,monospace;
+	font-size: 11px;
+
+}
+
+.header{
+	height: 100px;
+	width: 100%;
+	background-color: #4A4A4A;
+	text-align: center;
+	line-height: 100px;
+
+}
+
+.logo{
+	width:100px;
+	height: 100px;
+	position: absolute;
+	margin-left:60px;
+}
+
+.logo > img{
+	height: 90px;
+}
+
+.j{
+	width:100px;
+	height: 100px;
+	position: absolute;
+	right: 70px;
+}
+
+.j > img{
+	height: 60px;
+	margin-top:-60px;
+}
+
+.spTitulo{
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	background: -webkit-linear-gradient(#E78A46, #F63753);
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+.borderBottomHeader{
+	height: 7px;
+	width: 100%;
+	background: #F45748; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#EE404C, #F88438); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#EE404C, #F88438); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#EE404C, #F88438); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#EE404C, #F88438); /* Standard syntax */
+}
+
+.logoff{
+	position: absolute;
+	right: 10px;
+	width: 400px;
+	height: 30px;
+	top:10px;
+	font-size: 16px !important;
+	font-weight: bold;
+	text-align: right;
+	color:#F38632;
+}
+
+.logoff > a{
+	color:#F38632 !important;
+	text-transform: uppercase;
+}
+
+.lbl_usuario_nome{
+	color:#CA2759 ;
+}
+
+
+
+
+
+/* FIM CABEÇALHO */
+
+/* INÍCIO GERAL */
+
+.fD, .btn{
+	background: -webkit-linear-gradient(#F38632, #DF315C);
+	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	text-transform: uppercase;
+  	font-size:13px;
+  	font-weight: bold;
+}
+
+.fRed{
+	color:#D13050;
+  	font-size:13px;
+  	font-weight: bold;
+}
+
+
+.fL{
+	float: left;
+}
+
+.fR{
+	float: right;
+}
+
+input, select{
+	border: 1px solid #989898;
+	display: block;
+	font-size: 12px;
+	color:#333;
+}
+
+input{
+	text-align:left;
+}
+
+table tr td:first-child{
+	text-align: right;
+}
+
+.tblDados{
+	font-size: 14px;
+	text-transform:  uppercase;
+	color:#ffffff;
+	
+	margin-bottom: 5px;
+	width: 100%;
+	text-align: left;	
+}
+
+.tblDados > thead{
+	background-color: #fff;
+	color:#333;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+	
+}
+.tblDados > thead > tr > td{
+	border-bottom: 1px solid #aaa;
+}
+
+.tblDados > tbody > tr:last-child > td{
+	border-bottom: 1px solid #aaa;
+}
+
+.tblDados > thead > tr, .tblDados > tbody > tr{
+	height: 30px;
+}
+
+.tblDados > tbody > tr:hover{
+	background-color:F3F78F !important;
+}
+
+.tblDados > tbody > tr{
+	background-color: #d9d9d9;
+	color:#333;
+}
+
+.tblDados > tbody > tr:nth-child(even){
+	background-color: #fff;
+}
+
+.tblDados > thead > tr > td, .tblDados > tbody > tr > td{
+	text-align: center;
+}
+
+.content{
+	width: 100%;
+	height: 100%;
+}
+
+.subcontent{
+	width: 95%;
+	height: 100%;
+	margin: auto;
+	padding-top:20px;
+}
+
+.btn{
+	border: none;
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+
+.tituloConteudo{
+	font-weight: bold;
+	font-size: 20px;
+	width: 100%;
+	padding-bottom: 8px;
+	padding-left:20px;
+	/*border-bottom: 1px solid #E6396D;*/
+}
+
+hr{
+	border-color: #ED8487;
+	margin-bottom: 5px;
+}
+
+form > label{
+	width:100px;
+	text-align: right;
+	padding-right: 5px;
+	vertical-align: absmiddle;
+}
+
+.w500{
+	width: 500px;
+}
+
+.w400{
+	width: 400px;
+}
+
+.w300{
+	width: 300px;
+}
+
+.w100{
+	width: 100px;
+}
+
+.w50{
+	width: 50px;
+}
+
+.fs14{
+	font-size: 14px;
+}
+
+.tal{
+	text-align: left;
+}
+.tar{
+	text-align: right;
+}
+.tac{
+	text-align: center;
+}
+
+.mb15{
+	margin-bottom:15px;
+}
+
+.msg-box, .msg-box-ok{
+	background: #f1f2ea;
+	border: 1px solid #c7cbab;
+	padding: 5px 10px;
+	margin-bottom: 15px;
+	color: #CE3939;
+	font-size: 12px;
+	/*color: #727272;*/
+}
+
+.msg-box p, .msg-box-ok p{
+	margin: 0;
+	padding: 2px 0;
+}
+
+.msg-box-ok{
+	color:#007503;
+	border: 1px solid #65BF56;
+}
+
+.icon{
+	width: 12px; 
+	margin-right: 5px;
+}
+
+/* FIM GERAL */
+
+
+/*INÍCIO TELA DE LOGIN */
+.jGrande{
+	position: absolute;
+	right: 0px;
+	top:107px;
+	height: 100%;
+	
+}
+
+.jGrande > img{
+	height: 40%;
+
+}
+
+.dvLogin{
+	width: 343px;
+	margin: 0 auto;
+	margin-top:200px;
+	text-align: center;
+}
+
+.pagination{
+	border: 1px solid #777;
+	height: 20px;
+	padding: 5px;
+	margin: 5px;
+	text-transform: uppercase;
+	color:#333;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 13px;
+}
+
+a:link > pagination, a:visited > pagination{
+	text-decoration: none;
+}
+
+
+.subTableHead{
+	color:#444;
+	font-size:12px;
+}
+
+.btnVazio{
+	border:none;
+	background-color:none;
+	text-transform: capitalize;
+	float:left;
+	margin-left:3px;
+	cursor: pointer;
+}
+
+
+/* FIM TELA DE LOGIN */
+
+/* INICIO MENU */
+.menu{
+	margin:30px 0 0 60px;
+	font-weight: bold;
+}
+.menu >  li{
+	list-style: none;
+	font-size: 34px;
+}
+
+a{
+	text-decoration: none;
+}
+
+.jImgMaior > img{
+	height: 70% !important;
+}
+
+
+/* FIM MENU */

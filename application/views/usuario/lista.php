@@ -1,5 +1,5 @@
 <div class="subContent">
-	<button type="button" class="btn fR fD" onClick="window.location='<?php echo base_url('usuario/cadastro'); ?>'">Inserir Novo</button>
+	
 	<div class="tituloConteudo fD">Cadastro de Usuário</div>
 
 	<hr>
@@ -56,6 +56,6 @@
 	</table>
 	
 	<button type="button" class="btn fR fD" onClick="window.location='<?php echo base_url('sistema/menu'); ?>'">Voltar</button>
-	
+	<button type="button" class="btn fR fD" onClick="window.location='<?php echo base_url('usuario/cadastro'); ?>'">Inserir Novo</button>
 	
 </div>

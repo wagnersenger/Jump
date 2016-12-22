@@ -252,8 +252,9 @@ class Sistema extends CI_Controller {
 
 	}
 
-public function buscarMaterial($descricao){
-	$qrMateriais = $this->sistema->getListaMateriais(array('descricao' => $descricao));
+public function buscarMaterial(){
+	$data = $this->input->get();
+	$qrMateriais = $this->sistema->getListaMateriais(array('descricao' => $data['query']));
 	$dados = array('qrMateriais' => $qrMateriais );
 	$this->load->view('sistema/materiais/buscarMaterial', $dados);
 }

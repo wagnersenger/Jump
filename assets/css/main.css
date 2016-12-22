@@ -140,8 +140,8 @@ table tr td:first-child{
 }
 
 .tblDados > thead{
-	background-color: #fff;
-	color:#333;
+	background-color: #4A4A4A;
+	color:#fff;
 	text-align: center;
 	font-size: 12px;
 	font-weight: bold;
@@ -235,6 +235,10 @@ form > label{
 
 .w50{
 	width: 50px;
+}
+
+.w30{
+	width: 30px;
 }
 
 .fs14{

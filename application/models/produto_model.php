@@ -97,6 +97,59 @@ class Produto_model extends CI_Model {
 		$this->db->count_all_results('jump.materiais');
 	}
 
+	public function cadastrarProdutoPadrao($dados){
+		if($dados['id'] != null){
+			//usuário, atualizar
+			$this->db->where('id', $dados['id']);
+			$this->db->update('jump.produto',$dados);
+
+			return $dados['id'];
+		}else{
+			$this->db->insert('jump.produto',$dados);
+			
+			return $this->db->insert_id();
+		}
+	}
+
+	public function cadastrarProdutoMaterial($dados){
+		return $this->db->insert('jump.produto_material',$dados );
+	}
+
+	public function removerProdutoMateriais($dados){
+		print_r($dados);
+		$this->db->where('produto_id', $dados['produto_id']);
+		return $this->db->delete('jump.produto_material');
+	}
+
+
+	public function getProdutoLista(){
+		$qrProdutos = $this->db->get('jump.produto');
+		return $qrProdutos;
+	}
+
+	public function getProduto($id){
+		$this->db->where('id',$id);
+		$qrProduto = $this->db->get('jump.produto');
+
+		if($qrProduto->num_rows() == 1)
+			return $qrProduto->row();
+		else
+			return false;
+	}
+
+	public function getProdutoMaterial($id){
+		$this->db->where('produto_id', $id);
+		$qrMaterial = $this->db->get('jump.produto_material');
+
+		return $qrMaterial;
+	}
+
+	public function ativarProduto($id, $ativo){
+		$this->db->where('id',$id);		
+		$this->db->update('jump.produto',array('ativo' => $ativo));
+		return $this->db->affected_rows();
+	}
+
 
 
 }

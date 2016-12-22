@@ -58,3 +58,6 @@ $route['sistema/materiais/lista'] = 'sistema/listaMateriais';
 $route['sistema/materiais/lista/(:num)'] = 'sistema/listaMateriais/$1';
 $route['sistema/materiais/editar/(:num)'] = 'sistema/editarMaterial/$1';
 $route['sistema/materiais/buscar/(:any)'] = 'sistema/buscarMaterial/$1';
+
+$route['orcamento/solicitacao/cadastrar'] = 'orcamento/cadastrarSolicitacao';
+$route['orcamento/solicitacao/cadastrar/(:num)'] = 'orcamento/cadastrarSolicitacao/$1';
